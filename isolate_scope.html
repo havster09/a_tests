@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <title></title>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=2"></' + 'script>')</script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div ng-app="drinkApp" ng-controller="AppCtrl">
+<div drink flavor="{{ctrlFlavor}}">
+    <p>drink this shit</p>
+
+</div>
+
+<p data-ng-bind="ctrlFlavor"></p>
+
+</div>
+
+<script type="application/javascript" src="js/angular.min.js"></script>
+<script type="application/javascript" src="js/angular-route.js"></script>
+<script type="application/javascript" src="js/iso.js"></script>
+</body>
+</html>

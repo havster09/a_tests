@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <title>Progress Dialog</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div ng-app="progressDialog" ng-controller="progressDialogController">
+    <div id="dialogBoxContainer">
+    <div id="dialogBox">
+    <div class="header">
+    <h4 data-ng-bind="data.messages.title"></h4>
+    </div>
+    <p class="status">{{status}}</p>
+        <div id="progressBarContainer">
+            <div id="progressBar" style="width:0%"></div>
+        </div>
+        <p id="progressTotal">{{progressPercent+'/100'}}</p>
+        <button id="resetBtn" ng-click="loadReset()">RESET</button>
+    </div>
+    </div>
+    <button ng-click="loadStart()">START LOAD</button>
+</div>
+<script type="application/javascript" src="js/angular.min.js"></script>
+<script type="application/javascript" src="js/progressDialogApp.js"></script>
+<script type="application/javascript" src="js/progressDialogController.js"></script>
+</body>
+</html>
